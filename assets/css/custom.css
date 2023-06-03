@@ -1,0 +1,58 @@
+body {
+    background-color: #babecc;
+}
+
+.w-100 {
+    width: 100% !important;
+    color: red;
+}
+
+.h-600{
+    height: 600px !important;
+}
+.h-500{
+    height: 500px !important;
+}
+.h-400{
+    height: 400px !important;
+}
+.h-300{
+    height: 300px !important;
+}
+.h-200{
+    height: 200px !important;
+}
+.h-150{
+    height: 150px !important;
+}
+.h-100{
+    height: 100px !important;
+}
+.h-66{
+    height: 66.6666667px !important;
+}
+.h-50{
+    height: 50px !important;
+}
+
+
+
+.bg-red {
+    background-color: #ff3e4e;
+}
+
+.bg-blue {
+    background-color: #608fe9;
+}
+
+.borderw{
+    border: 2px solid #fff;
+}
+
+.border{
+    border: 1px solid black !important;
+}
+
+.bg-green {
+    background-color: #00e3ab;
+}

@@ -1,58 +1,34 @@
-body {
-    background-color: #babecc;
+#header {
+	background-image: url('../media/images/pages/index/bhijumb.jpg');
 }
 
-.w-100 {
-    width: 100% !important;
-    color: red;
+.btn-theme {
+	background-color: #ed4d45;
+	color: #fff;
 }
 
-.h-600{
-    height: 600px !important;
-}
-.h-500{
-    height: 500px !important;
-}
-.h-400{
-    height: 400px !important;
-}
-.h-300{
-    height: 300px !important;
-}
-.h-200{
-    height: 200px !important;
-}
-.h-150{
-    height: 150px !important;
-}
-.h-100{
-    height: 100px !important;
-}
-.h-66{
-    height: 66.6666667px !important;
-}
-.h-50{
-    height: 50px !important;
+.btn-theme:hover {
+	color: #ed4d45;
+	background-color: #fff;
 }
 
-
-
-.bg-red {
-    background-color: #ff3e4e;
+.nav-item > a {
+	color: #fff !important;
 }
 
-.bg-blue {
-    background-color: #608fe9;
+.button-group > a:hover {
+	text-decoration: none !important;
 }
 
-.borderw{
-    border: 2px solid #fff;
+.btn-turq {
+	background-color: #65c9bb;
+	color: #fff;
+	border-radius: 2px;
 }
 
-.border{
-    border: 1px solid black !important;
+.btn-turq:hover {
+	color: #65c9bb;
+	background-color: #000;
 }
 
-.bg-green {
-    background-color: #00e3ab;
-}
+@media screen and (max-width:974px) {}

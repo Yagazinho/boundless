@@ -8,8 +8,9 @@
 }
 
 .btn-theme:hover {
-	color: #ed4d45;
-	background-color: #fff;
+	color: #fff;
+	background: transparent;
+	border: 1px solid #fff;
 }
 
 .nav-item > a {
@@ -27,8 +28,53 @@
 }
 
 .btn-turq:hover {
+	color: #fff;
+	background: transparent;
+	border: 1px solid #fff;
+}
+
+.slide-text {
+	flex-wrap: wrap !important;
+	position: relative !important;
+	left: 2.5rem !important
+}
+
+.py-10 {
+	padding: 5rem 0 !important;
+}
+
+.text-turq {
 	color: #65c9bb;
-	background-color: #000;
+}
+
+.bg-lpink {
+	background-color: #fbe0ce;
+}
+
+.text-db {
+	color: #263b5c;
+}
+
+.btn-theme1 {
+	color: #ed4d45;
+	background: transparent;
+	border: 1px solid #ed4d45;
+}
+
+.btn-theme1:hover {
+	color: #fff;
+	background: transparent;
+	border: 1px solid #fff;
+}
+
+.about-sec1 .btn-theme:hover {
+	color: #ed4d45;
+	border: 1px solid #ed4d45;
+}
+
+.custom-gap {
+	max-width: 600px !important;
+	margin: 0 auto !important;
 }
 
 @media screen and (max-width:974px) {}

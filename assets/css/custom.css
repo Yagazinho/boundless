@@ -61,6 +61,10 @@
 	border: 1px solid #ed4d45;
 }
 
+hr {
+	width: 100% !important;
+}
+
 .btn-theme1:hover {
 	color: #fff;
 	background: transparent;

@@ -72,9 +72,34 @@
 	border: 1px solid #ed4d45;
 }
 
+.about-sec2 .btn-theme:hover {
+	color: #ed4d45;
+	border: 1px solid #ed4d45;
+}
+
+.card {
+	height: 470px !important;
+	width: auto !important;
+	border-radius: 0 !important;
+}
+
+.card-img {
+	height: 278px !important;
+}
+
+.about-sec3 .btn-theme:hover {
+	color: #ed4d45;
+	border: 1px solid #ed4d45;
+}
+
 .custom-gap {
 	max-width: 600px !important;
 	margin: 0 auto !important;
+}
+
+.img-t {
+	margin: 61px 0 -20px -85px !important;
+	height: fit-content !important;
 }
 
 @media screen and (max-width:974px) {}

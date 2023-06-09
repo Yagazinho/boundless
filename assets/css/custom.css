@@ -21,11 +21,31 @@
 	text-decoration: none !important;
 }
 
+.card-body {
+	background-color: #f4f2f1 !important;
+}
+
+.card-img {
+	border-radius: 0 !important;
+}
+
 .btn-turq {
 	background-color: #65c9bb;
 	color: #fff;
 	border-radius: 2px;
 }
+
+.sec-img {
+	background-position: center !important;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/*
+.bg-themet {
+	background: rgba(255, 99, 71, 0.4) !important;
+}
+*/
 
 .btn-turq:hover {
 	color: #fff;
@@ -61,9 +81,6 @@
 	border: 1px solid #ed4d45;
 }
 
-hr {
-	width: 100% !important;
-}
 
 .btn-theme1:hover {
 	color: #fff;
@@ -82,13 +99,13 @@ hr {
 }
 
 .card {
-	height: 470px !important;
+	max-height: 470px !important;
 	width: auto !important;
 	border-radius: 0 !important;
 }
 
 .card-img {
-	height: 278px !important;
+	min-height: 278px !important;
 }
 
 .about-sec3 .btn-theme:hover {
@@ -104,6 +121,10 @@ hr {
 .img-t {
 	margin: 61px 0 -20px -85px !important;
 	height: fit-content !important;
+}
+#wrapper{
+	background: #263b5c;
+	color: #fff;
 }
 
 @media screen and (max-width:974px) {}

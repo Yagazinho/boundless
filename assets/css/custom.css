@@ -2,6 +2,10 @@
 	background-image: url('../media/images/pages/index/bhijumb.jpg');
 }
 
+body {
+	overflow-x: hidden !important;
+}
+
 .btn-theme {
 	background-color: #ed4d45;
 	color: #fff;
@@ -15,6 +19,10 @@
 
 .nav-item > a {
 	color: #fff !important;
+}
+
+.nav-item > a:hover {
+	color: #65c9bb !important;
 }
 
 .button-group > a:hover {
@@ -98,14 +106,27 @@
 	border: 1px solid #ed4d45;
 }
 
-.card {
+.card-sec {
 	max-height: 470px !important;
 	width: auto !important;
 	border-radius: 0 !important;
 }
 
+.mar-l {
+	margin-left: 2.25rem !important;
+}
+
+.card-blog {
+	max-width: 230px !important;
+	height: auto !important;
+}
+
 .card-img {
 	min-height: 278px !important;
+}
+
+.cardblog-img {
+	max-height: 200px !important;
 }
 
 .about-sec3 .btn-theme:hover {

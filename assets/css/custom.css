@@ -107,13 +107,18 @@ body {
 }
 
 .card-sec {
-	max-height: 470px !important;
+	min-height: 470px !important;
 	width: auto !important;
 	border-radius: 0 !important;
 }
 
 .mar-l {
 	margin-left: 2.25rem !important;
+}
+
+.btn-blog {
+	border-bottom: 2px solid #ed4d45 !important;
+	color: #ed4d45;
 }
 
 .card-blog {

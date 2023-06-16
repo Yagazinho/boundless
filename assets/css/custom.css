@@ -1,10 +1,20 @@
+body {
+	overflow-x: hidden !important;
+}
+
 #header {
 	background-image: url('../media/images/pages/index/bhijumb.jpg');
 }
 
-body {
-	overflow-x: hidden !important;
+#temp {
+	background-image: url('../media/images/pages/index/about5bg.jpg');
 }
+
+.temp-img {
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
 
 #navigation {
 	background-color: transparent !important;

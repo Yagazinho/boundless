@@ -2,7 +2,7 @@ body {
 	overflow-x: hidden !important;
 }
 
-#header {
+#top-sec {
 	background-image: url('../media/images/pages/index/bhijumb.jpg');
 }
 
@@ -20,16 +20,11 @@ body {
 	background-color: transparent !important;
 }
 
-nav:not(.sticky-top) {
-	position: absolute;
-}
 
-.sticky-top {
-	position: fixed;
+.active {
 	background-color: #263b5c;
 	color: #fff;
 	width: 100%;
-	padding: 0 25px 0 0;
 }
 
 .btn-theme {

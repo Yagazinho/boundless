@@ -1,11 +1,19 @@
-let navbar = document.getElementById("navigation");
+const nav = document.querySelector('nav');
+const header = document.querySelector('header');
 
-let shouldStick = navbar.offsetTop;
-
-function addOrRemoveStickyClass() {
-	if (window.pageYOffset >= shouldStick) {
-		navbar.classList.add("sticky-top");
+const navObserverCallback = (watchEntry, navObserver) => {
+	if (!watchEntry[0].isIntersecting) {
+		nav.classList.add('active');
 	} else {
-		navbar.classList.remove("sticky-top");
+		nav.classList.remove('active');
 	}
 }
+
+const navObserverOptions = {
+	rootMargin: '-9px',
+	threshold: 0
+}
+
+const navObserver = new IntersectionObserver(navObserverCallback, navObserverOptions);
+
+navObserver.observe(header);

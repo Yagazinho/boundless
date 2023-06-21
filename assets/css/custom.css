@@ -15,12 +15,6 @@ body {
 	background-repeat: no-repeat;
 }
 
-
-#navigation {
-	background-color: transparent !important;
-}
-
-
 .active {
 	background-color: #263b5c !important;
 	color: #fff !important;

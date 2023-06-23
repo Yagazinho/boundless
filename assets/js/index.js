@@ -11,7 +11,7 @@ const navObserverCallback = (watchEntry, navObserver) => {
 }
 
 const navObserverOptions = {
-	rootMargin: '0px 0px 10px 0px',
+	rootMargin: '0px 0px 5px 0px',
 	threshold: .1
 }
 

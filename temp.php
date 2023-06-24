@@ -1,64 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-	<meta charset="UTF-8">
-	<title>BHI | Welcome to the official website of boundless hearts initiative</title>
-	<link rel="stylesheet" href="assets/bootstrap-4.5.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/custom.css">
-</head>
+include("includes/head.php");
+?>
 
 <body>
-	<div id="top-sec">
+	<div id="temp" class="temp-img">
 		<div class="container-fluid">
-			<nav class="navbar navbar-expand-sm navbar-dark mb-5 fixed-top">
-				<!-- Brand/logo -->
-				<a class="navbar-brand" href="#">
-					<img src="assets/media/images/brand/logo/bhilgoW.png" alt="logo" style="width:100px;">
-				</a>
-				<!-- Toggler/collapsibe Button -->
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<!-- Navbar links -->
-				<div class="collapse navbar-collapse" id="collapsibleNavbar">
-					<!-- Links -->
-					<ul class="navbar-nav text-white mx-auto">
-						<li class="nav-item px-3">
-							<a class="nav-link" href="index.html">Home</a>
-						</li>
-						<li class="nav-item px-3">
-							<a class="nav-link" href="weare.html">Who We Are</a>
-						</li>
-						<li class="nav-item px-3">
-							<a class="nav-link" href="#">Programs</a>
-						</li>
-						<li class="nav-item px-3">
-							<a class="nav-link" href="#">About</a>
-						</li>
-						<li class="nav-item px-3">
-							<a class="nav-link" href="#">Blogs</a>
-						</li>
-						<li class="nav-item px-3">
-							<a class="nav-link" href="#">Contact</a>
-						</li>
-					</ul>
-					<div class="button-group">
-						<a href="" class="text-white pr-1">call us:(+234)810-1992-11</a>
-						<a href="" class="btn btn-theme btn-sm">Donate<i class="pl-1 fa fa-heart"></i></a>
-					</div>
-				</div>
-				<!-- Links -->
-			</nav>
-			<div class="container py-10">
-				<div class="row text-white">
-					<div class="col-md-4 slide-text">
-						<h1 class="pb-2"><strong>Give a Helping Hand To Those Who Need It!</strong></h1>
-						<h5 class="pb-3">when you donate, you're offering internally displaced children hope for a better tomorrow</h5>
-						<a href="" class="btn btn-md btn-turq">Ongoing Programs</a>
-					</div>
+			<?php include("includes/nav.php"); ?>
+		</div>
+		<div class="container py-10">
+			<div class="row text-white">
+				<div class="col-md-4 slide-text">
+					<h1 class="pb-2"><strong>Give a Helping Hand To Those Who Need It!</strong></h1>
 				</div>
 			</div>
 		</div>
@@ -220,8 +173,8 @@
 						<div class="sec-icon pb-1">
 							<img src="assets/media/images/pages/index/bball.svg" alt="" class="img-fluid" style="width: 40px;">
 						</div>
-						<span class="text-white"><strong>Population Control through sex selection</strong></span>
-						<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nobis, aliquam!</p>
+						<span class="text-white"><strong>Population Control</strong></span>
+						<p class="text-white">Discover innovative ways of controlling population through sex selection. Facilis nobis, aliquam!</p>
 					</div>
 					<div class="col-md-4 justify-content-center text-center">
 						<div class="sec-icon pb-1">
@@ -276,55 +229,5 @@
 -->
 
 	</main>
-	<div id="wrapper">
-		<div class="row">
-			<div class="container-fluid">
-				<div class="custom-gap py-3 d-flex">
-					<div class="col-md-4">
-						<img src="assets/media/images/brand/logo/bhilgoW.png" alt="" class="img-fluid foot-img">
-						<span class="foot-txt py-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo libero quaerat aspernatur modi, ut, atque odit porro voluptatibus blanditiis consequatur earum.</span>
-						<div class="social-iconsf pt-2 d-flex">
-							<a href="" class="btn btn-sm btn-f mx-1"><i class="fa fa-facebook"></i></a>
-							<a href="" class="btn btn-sm btn-t mx-1"><i class="fa fa-twitter"></i></a>
-							<a href="" class="btn btn-sm btn-ln mx-1"><i class="fa fa-linkedin"></i></a>
-							<a href="" class="btn btn-sm btn-you mx-1"><i class="fa fa-youtube"></i></a>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="foot-nav text-center justify-content-center">
-							<h6 class="pt-5"><strong>Navigation</strong></h6>
-							<ul class="m-0 p-0">
-								<li class="py-1"><a href="">Home</a></li>
-								<li class="py-1"><a href="">About</a></li>
-								<li class="py-1"><a href="">Services</a></li>
-								<li class="py-1"><a href="">Blog</a></li>
-								<li class="py-1"><a href="">Contact</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="d-flex">
-							<div class="cont-us">
-								<h6 class="pt-5"><strong>Contact Us</strong></h6>
-								<p class="foot-txt">1234, forest hills boulevard Asokoro</p>
-								<p class="foot-txt">(+234)810-1992-11</p>
-								<p class="foot-txt">boundlessshearts@gmail.com</p>
-							</div>
-							<div class="sup pl-2">
-								<h6 class="pt-5">Support</h6>
-								<p class="foot-txt">when you render a helping hand you're directly making the world a better place</p>
-								<a href="" class="btn-sm btn btn-theme1">Join us today</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<script src="assets/js/jquery-3.js"></script>
-	<script src="assets/bootstrap-4.5.2/js/bootstrap.min.js"></script>
-	<script src="assets/js/index.js"></script>
-</body>
-
-</html>
+	<?php include("includes/footer.php"); ?>
+	<?php include("includes/foot.php"); ?>

@@ -19,7 +19,7 @@
 				<a class="nav-link" href="weare.php">Who We Are</a>
 			</li>
 			<li class="nav-item px-3">
-				<a class="nav-link" href="#">Programs</a>
+				<a class="nav-link" href="programs.php">Programs</a>
 			</li>
 			<li class="nav-item px-3">
 				<a class="nav-link" href="#">About</a>

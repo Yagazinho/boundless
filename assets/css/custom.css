@@ -159,6 +159,11 @@ body {
 	margin: 0 auto !important;
 }
 
+.pcustom-gap {
+	max-width: 840px !important;
+	margin: 0 auto !important;
+}
+
 .img-t {
 	margin: 61px 0 -20px -85px !important;
 	height: fit-content !important;
@@ -213,14 +218,37 @@ body {
 	border-radius: 0;
 }
 
+.d-any {
+	display: flex;
+}
+
 .btn-ln {
 	background-color: #0077b5;
 	color: #fff;
 	border-radius: 0;
 }
 
-@media (min-width:1400px) {
+@media (max-width:1400px) {
 	.custom-gap {
 		max-width: 1320px;
+	}
+}
+
+@media (max-width:852px) {
+
+	body {
+		align-content: center;
+		text-align: center;
+	}
+
+	.card {
+		justify-content: center;
+	}
+
+	.d-any {
+		display: inline-block !important;
+		background-color: red;
+		justify-content: center !important;
+
 	}
 }

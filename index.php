@@ -33,7 +33,7 @@
 							<a class="nav-link" href="weare.php">Who We Are</a>
 						</li>
 						<li class="nav-item px-3">
-							<a class="nav-link" href="#">Programs</a>
+							<a class="nav-link" href="programs.php">Programs</a>
 						</li>
 						<li class="nav-item px-3">
 							<a class="nav-link" href="#">About</a>
@@ -214,21 +214,21 @@
 						<div class="sec-icon pb-1">
 							<img src="assets/media/images/pages/index/pill2.svg" alt="" class="img-fluid" style="width: 40px;">
 						</div>
-						<span class="text-white"><strong>Food and Medicine</strong></span>
+						<span class="text-white mb-1"><strong>Food and Medicine</strong></span>
 						<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nobis, aliquam!</p>
 					</div>
 					<div class="col-md-4 justify-content-center text-center">
 						<div class="sec-icon pb-1">
 							<img src="assets/media/images/pages/index/bball.svg" alt="" class="img-fluid" style="width: 40px;">
 						</div>
-						<span class="text-white"><strong>Population Control</strong></span>
+						<span class="text-white mb-1"><strong>Population Control</strong></span>
 						<p class="text-white">Discover innovative ways of controlling population through sex selection. Facilis nobis, aliquam!</p>
 					</div>
 					<div class="col-md-4 justify-content-center text-center">
 						<div class="sec-icon pb-1">
 							<img src="assets/media/images/pages/index/meat.svg" alt="" class="img-fluid" style="width: 40px;">
 						</div>
-						<span class="text-white"><strong>livestock farming</strong></span>
+						<span class="text-white mb-1"><strong>livestock farming</strong></span>
 						<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nobis, aliquam!</p>
 					</div>
 				</div>

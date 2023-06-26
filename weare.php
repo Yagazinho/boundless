@@ -1,5 +1,7 @@
 <?php
 
+define("TITLE", "Who we are");
+
 include("includes/head.php");
 ?>
 

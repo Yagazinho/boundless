@@ -1,5 +1,6 @@
 <?php
 
+define("TITLE", "temp");
 include("includes/head.php");
 ?>
 

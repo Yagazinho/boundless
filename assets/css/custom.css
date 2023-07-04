@@ -64,12 +64,6 @@ body {
 	background-attachment: fixed;
 }
 
-/*
-.bg-themet {
-	background: rgba(255, 99, 71, 0.4) !important;
-}
-*/
-
 .btn-turq:hover {
 	color: #fff;
 	background: transparent;
@@ -241,8 +235,8 @@ body {
 		text-align: center;
 	}
 
-	.card {
-		justify-content: center;
+	.med {
+		justify-content: center !important;
 	}
 
 	.d-any {

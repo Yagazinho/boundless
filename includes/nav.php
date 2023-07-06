@@ -22,13 +22,13 @@
 				<a class="nav-link" href="programs.php">Programs</a>
 			</li>
 			<li class="nav-item px-3">
-				<a class="nav-link" href="#">About</a>
+				<a class="nav-link" href="about.php">About</a>
 			</li>
 			<li class="nav-item px-3">
-				<a class="nav-link" href="#">Blogs</a>
+				<a class="nav-link" href="blogs.php">Blogs</a>
 			</li>
 			<li class="nav-item px-3">
-				<a class="nav-link" href="#">Contact</a>
+				<a class="nav-link" href="contacts.php">Contact</a>
 			</li>
 		</ul>
 		<div class="button-group">

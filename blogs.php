@@ -1,65 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-	<meta charset="UTF-8">
-	<title>BHI | Welcome to the official website of boundless hearts initiative</title>
-	<link rel="stylesheet" href="assets/bootstrap-4.5.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/custom.css">
-</head>
+define("TITLE", "blogs");
+include("includes/head.php");
+?>
 
 <body>
-	<div id="top-sec">
+	<div id="temp" class="temp-img">
 		<div class="container-fluid">
-			<nav class="navbar navbar-expand-sm navbar-dark mb-5 fixed-top">
-				<!-- Brand/logo -->
-				<a class="navbar-brand" href="#">
-					<img src="assets/media/images/brand/logo/bhilgoW.png" alt="logo" style="width:100px;">
-				</a>
-				<!-- Toggler/collapsibe Button -->
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<!-- Navbar links -->
-				<div class="collapse navbar-collapse" id="collapsibleNavbar">
-					<!-- Links -->
-					<ul class="navbar-nav text-white mx-auto">
-						<li class="nav-item px-3">
-							<a class="nav-link" href="index.php">Home</a>
-						</li>
-						<li class="nav-item px-3">
-							<a class="nav-link" href="weare.php">Who We Are</a>
-						</li>
-						<li class="nav-item px-3">
-							<a class="nav-link" href="programs.php">Programs</a>
-						</li>
-						<li class="nav-item px-3">
-							<a class="nav-link" href="about.php">About</a>
-						</li>
-						<li class="nav-item px-3">
-							<a class="nav-link" href="blogs">Blogs</a>
-						</li>
-						<li class="nav-item px-3">
-							<a class="nav-link" href="contacts.php">Contact</a>
-						</li>
-					</ul>
-					<div class="button-group">
-						<a href="" class="text-white pr-1">call us:(+234)810-1992-11</a>
-						<a href="" class="btn btn-theme btn-sm">Donate<i class="pl-1 fa fa-heart"></i></a>
-					</div>
-				</div>
-				<!-- Links -->
-			</nav>
-
-			<div class="container py-10">
-				<div class="row text-white">
-					<div class="col-md-4 slide-text">
-						<h1 class="pb-2"><strong>Give a Helping Hand To Those Who Need It!</strong></h1>
-						<h5 class="pb-3">when you donate, you're offering internally displaced children hope for a better tomorrow</h5>
-						<a href="" class="btn btn-md btn-turq">Ongoing Programs</a>
-					</div>
+			<?php include("includes/nav.php"); ?>
+		</div>
+		<div class="container py-10">
+			<div class="row text-white">
+				<div class="col-md-4 slide-text">
+					<h1 class="pb-2"><strong>Blogs</strong></h1>
 				</div>
 			</div>
 		</div>
@@ -214,21 +167,21 @@
 						<div class="sec-icon pb-1">
 							<img src="assets/media/images/pages/index/pill2.svg" alt="" class="img-fluid" style="width: 40px;">
 						</div>
-						<span class="text-white mb-1"><strong>Food and Medicine</strong></span>
+						<span class="text-white"><strong>Food and Medicine</strong></span>
 						<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nobis, aliquam!</p>
 					</div>
 					<div class="col-md-4 justify-content-center text-center">
 						<div class="sec-icon pb-1">
 							<img src="assets/media/images/pages/index/bball.svg" alt="" class="img-fluid" style="width: 40px;">
 						</div>
-						<span class="text-white mb-1"><strong>Population Control</strong></span>
+						<span class="text-white"><strong>Population Control</strong></span>
 						<p class="text-white">Discover innovative ways of controlling population through sex selection. Facilis nobis, aliquam!</p>
 					</div>
 					<div class="col-md-4 justify-content-center text-center">
 						<div class="sec-icon pb-1">
 							<img src="assets/media/images/pages/index/meat.svg" alt="" class="img-fluid" style="width: 40px;">
 						</div>
-						<span class="text-white mb-1"><strong>livestock farming</strong></span>
+						<span class="text-white"><strong>livestock farming</strong></span>
 						<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nobis, aliquam!</p>
 					</div>
 				</div>
@@ -270,11 +223,10 @@
 				</div>
 			</div>
 		</div>
-
-		<!--
-		<div class="location"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31519.25358313929!2d7.513905299999999!3d9.072264399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1686504716190!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<div class="location">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31519.25358313929!2d7.513905299999999!3d9.072264399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1686504716190!5m2!1sen!2sng" width="1800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
--->
+
 
 	</main>
 	<?php include("includes/footer.php"); ?>

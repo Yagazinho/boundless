@@ -70,6 +70,18 @@ body {
 	border: 1px solid #fff;
 }
 
+.btn-turqin {
+	color: #65c9bb;
+	background: transparent;
+	border: 1px solid #65c9bb;
+	border-radius: 0 !important;
+}
+
+.btn-turqin:hover {
+	color: #fff;
+	background-color: #65c9bb;
+}
+
 .slide-text {
 	flex-wrap: wrap !important;
 	position: relative !important;

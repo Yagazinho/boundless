@@ -2,7 +2,7 @@
 	<div id="wrapper">
 		<div class="row">
 			<div class="container-fluid">
-				<div class="custom-gap py-3 d-flex">
+				<div class="pcustom-gap py-3 d-flex">
 					<div class="col-md-4">
 						<img src="assets/media/images/brand/logo/bhilgoW.png" alt="" class="img-fluid foot-img">
 						<span class="foot-txt py-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo libero quaerat aspernatur modi, ut, atque odit porro voluptatibus blanditiis consequatur earum.</span>

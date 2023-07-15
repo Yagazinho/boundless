@@ -70,23 +70,19 @@ body {
 	border: 1px solid #fff;
 }
 
-.btn-turqin {
-	background: transparent;
-	border: 1px solid #65c9bb;
-	color: #65c9bb;
-	border-radius: 0 !important;
-}
-
-.btn-turqin:hover {
-	background-color: #65c9bb;
-	border: 1px solid #65c9bb;
-	color: #fff;
-}
-
 .slide-text {
 	flex-wrap: wrap !important;
 	position: relative !important;
 	left: 2.5rem !important
+}
+
+.mb-cust {
+	margin: 1.5rem 0 !important;
+}
+
+.location {
+	max-width: 800px !important;
+	max-height: 10% !important;
 }
 
 .py-10 {
@@ -163,6 +159,11 @@ body {
 
 .custom-gap {
 	max-width: 600px !important;
+	margin: 0 auto !important;
+}
+
+.contact-gap {
+	max-width: 800px !important;
 	margin: 0 auto !important;
 }
 

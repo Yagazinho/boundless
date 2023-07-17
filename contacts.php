@@ -73,37 +73,34 @@ if(isset($_POST['sendMessage'])){
 					<h5><strong>Get in touch</strong></h5>
 					<form action="" method="post">
 						<div class="row">
-							<div class="col-md-12">
-								<input type="text" name="name" placeholder="Your Name" value="<?php if(isset($_POST['name'])){echo $_POST['name'];} ?>" class="form-control form-group">
+							<div class="col-md-12 mb-2">
+								<input type="text" name="name" placeholder="Your Name" value="<?php if(isset($_POST['name'])){echo $_POST['name'];} ?>" class="form-control">
 								<span class="text-danger"><?php if(isset($userNameError)){echo $userNameError; } ?></span>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-6">
-								<input type="text" name="email" placeholder="Your Email" value="<?php if(isset($_POST['email'])){echo $_POST['email'];} ?>" class="form-control form-group">
+							<div class="col-md-6 mb-2">
+								<input type="text" name="email" placeholder="Your Email" value="<?php if(isset($_POST['email'])){echo $_POST['email'];} ?>" class="form-control">
 								<?php if(isset($emailError)):?><span class="text-danger"><?= $emailError;?></span><?php endif ?>
 							</div>
-							<div class="col-md-6">
-								<input type="number" name="phone" placeholder="Your Phone" value="<?php if(isset($_POST['phone'])){echo $_POST['phone'];} ?>" class="form-control form-group">
+							<div class="col-md-6 mb-2">
+								<input type="number" name="phone" placeholder="Your Phone" value="<?php if(isset($_POST['phone'])){echo $_POST['phone'];} ?>" class="form-control">
 								<?php if(isset($phoneError)):?><span class="text-danger"><?= $phoneError;?></span><?php endif ?>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-12">
-								<input type="text" name="sub" placeholder="Subject" value="<?php if(isset($_POST['sub'])){echo $_POST['sub'];} ?>" class="form-control form-group">
+							<div class="col-md-12 mb-2">
+								<input type="text" name="sub" placeholder="Subject" value="<?php if(isset($_POST['sub'])){echo $_POST['sub'];} ?>" class="form-control">
 								<?php if(isset($subjectError)):?><span class="text-danger"><?= $subjectError;?></span><?php endif ?>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-12">
-								<textarea name="mess" placeholder="Write a message" cols="30" rows="10" class="form-control form-group"><?php if(isset($_POST['mess'])){echo $_POST['mess'];} ?></textarea>
+							<div class="col-md-12 mb-2">
+								<textarea name="mess" placeholder="Write a message" cols="30" rows="10" class="form-control"><?php if(isset($_POST['mess'])){echo $_POST['mess'];} ?></textarea>
 								<?php if(isset($messageError)):?><span class="text-danger"><?= $messageError;?></span><?php endif ?>
 							</div>
 						</div>
-						<div class="d-flex">
-							<button type="submit" name="sendMessage" class="btn px-5 btn-md btn-turqin">Send</button>
-							<button type="reset" class="btn-lg btn-outline-danger btn">cancel</button>
-						</div>
+						<button type="submit" name="sendMessage" class="btn px-5 btn-md btn-turqin">Send</button>
 					</form>
 				</div>
 				<div class="col-md-4">

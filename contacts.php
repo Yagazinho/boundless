@@ -1,7 +1,49 @@
 <?php
 
+include("includes/config.php");
+
 define("TITLE", "contact");
 include("includes/head.php");
+
+//page level script
+$pageURL = "contacts.php";
+
+//collecting data
+if(isset($_POST['sendMessage'])){
+	$userName = trim(stripslashes(mysqli_real_escape_string($con, $_POST['name'])));
+	$email = trim(stripslashes(mysqli_real_escape_string($con, $_POST['email'])));
+	$subject = trim(stripslashes(mysqli_real_escape_string($con, $_POST['sub'])));
+	$message = trim(stripslashes(mysqli_real_escape_string($con, $_POST['mess'])));
+	$phone = trim(intval($_POST['phone']));
+//	validating data
+	if(empty($userName)){
+		array_push($errs, $userNameError = "field cannot be empty");
+	}
+	if(empty($email)){
+		array_push($errs, $emailError = "field cannot be empty");
+	}
+	if(empty($phone)){
+		array_push($errs, $phoneError = "field cannot be empty");
+	}
+	if(empty($subject)){
+		array_push($errs, $subjectError = "field cannot be empty");
+	}
+	if(empty($message)){
+		array_push($errs, $messageError = "field cannot be empty");
+	}
+//	checking for duplicates
+	if(checkDuplicate('contacts', "mess='$message'")){ array_push($errs, $messageExistsError = ''); $emsg = "Message already exists, please modify"; }
+//	uploading to db
+	if(count($errs) == 0){
+		if(mysqli_query($con, "INSERT INTO contacts(name,phone,email,sub,mess,dc) VALUE('$userName','$phone','$email','$subject','$message',NOW())")){
+			$smsg = "Thank you '$userName' for your feedback, we will be in touch";
+		}else{
+			$emsg = "Something went wrong, please try again ".mysqli_error($con);
+		}
+	}
+}
+
+
 ?>
 
 <body>
@@ -32,29 +74,37 @@ include("includes/head.php");
 					<form action="" method="post">
 						<div class="row">
 							<div class="col-md-12">
-								<input type="text" name="userName" placeholder="Your Name" value="" class="form-control form-group">
+								<input type="text" name="name" placeholder="Your Name" value="<?php if(isset($_POST['name'])){echo $_POST['name'];} ?>" class="form-control form-group">
+								<span class="text-danger"><?php if(isset($userNameError)){echo $userNameError; } ?></span>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-6">
-								<input type="text" name="email" placeholder="Your Email" value="" class="form-control form-group">
+								<input type="text" name="email" placeholder="Your Email" value="<?php if(isset($_POST['email'])){echo $_POST['email'];} ?>" class="form-control form-group">
+								<?php if(isset($emailError)):?><span class="text-danger"><?= $emailError;?></span><?php endif ?>
 							</div>
 							<div class="col-md-6">
-								<input type="number" name="phone" placeholder="Your Phone" value="" class="form-control form-group">
+								<input type="number" name="phone" placeholder="Your Phone" value="<?php if(isset($_POST['phone'])){echo $_POST['phone'];} ?>" class="form-control form-group">
+								<?php if(isset($phoneError)):?><span class="text-danger"><?= $phoneError;?></span><?php endif ?>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<input type="text" name="sub" placeholder="Subject" value="" class="form-control form-group">
+								<input type="text" name="sub" placeholder="Subject" value="<?php if(isset($_POST['sub'])){echo $_POST['sub'];} ?>" class="form-control form-group">
+								<?php if(isset($subjectError)):?><span class="text-danger"><?= $subjectError;?></span><?php endif ?>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<textarea name="mess" placeholder="Write a message" cols="30" rows="10" class="form-control form-group"></textarea>
+								<textarea name="mess" placeholder="Write a message" cols="30" rows="10" class="form-control form-group"><?php if(isset($_POST['mess'])){echo $_POST['mess'];} ?></textarea>
+								<?php if(isset($messageError)):?><span class="text-danger"><?= $messageError;?></span><?php endif ?>
 							</div>
+						</div>
+						<div class="d-flex">
+							<button type="submit" name="sendMessage" class="btn px-5 btn-md btn-turqin">Send</button>
+							<button type="reset" class="btn-lg btn-outline-danger btn">cancel</button>
 						</div>
 					</form>
-					<button class="btn px-5 btn-md btn-turqin">Send</button>
 				</div>
 				<div class="col-md-4">
 					<h5><strong>My Contact Details</strong></h5>
